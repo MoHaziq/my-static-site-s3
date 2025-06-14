@@ -21,4 +21,4 @@ jobs:
           aws-region: ap-southeast-2  # Change if your S3 bucket is in a different region
 
       - name: Sync files to S3
-        run: aws s3 sync . s3://github-s3-deploy --delete --exclude ".git/*" --exclude ".github/*"
+        run: aws s3 sync . s3://mycloudsite-haziq --delete --exclude ".git/*" --exclude ".github/*"
